@@ -100,7 +100,7 @@ body {
 }
 #start-fight-btn {
   display: none;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .d-none {
@@ -252,7 +252,7 @@ justify-content: space-evenly;
 }
 #start-fight-btn {
   display: none;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 #show-winner.d-flex {
   display: flex!important;
