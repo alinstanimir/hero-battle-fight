@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HERO FIGHT</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <div class="container">
+            <h1 class="title"> The Epic FIGHT</h1>
+       
+            <div class="buttons-containers">
+                <button id="show-heroes-btn">Show Heroes</button>
+                <button id="start-fight-btn">Start FIght</button>
+            </div>
+        
+            <div class="heroes-container" id="heroes-container">
+                <div class="hero-container">
+                    <img src="assets/hero1.jpg" alt="">
+                    <span class="hero-name">Terror</span>
+                    <div class="hero-details">
+                        <span>XP 600</span>
+                        <span>Can Jump</span>
+                        <span>Have Shield</span>
+                    </div>
+                </div>
+                <div class="hero-containerr">
+                    <img src="assets/hero2.jpg" alt="">
+                    <span class="hero-name">Knight</span>
+                    <div class="hero-details">
+                        <span>XP 570</span>
+                        <span>Can Dodge</span>
+                        <span>Shield Protection</span>
+                    </div>
+                </div>
+                <div class="hero-containerrr">
+                    <img src="assets/hero3.jpg" alt="">
+                    <span class="hero-name">Storm</span>
+                    <div class="hero-details">
+                        <span>XP 550</span>
+                        <span>Can Fly</span>
+                        <span>Have Shield</span>
+                    </div>
+
+                </div>
+            </div>
+
+            <div id="show-winner">
+                
+            </div>
+
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+        <script src="functionality.js"></script>
+    </body>
+</html>
+
+
+
+
+<!--
+  HTML:
+  <div id="heroes-container">
+  </div>
+  <div id="show-winner">
+  </div>
+  JS:
+  let showWinnerDiv = document.getElementById('show-winner');
+  // la click pe butonul de Start Fight vreau sa adaug un event listener, care sta si asculta momentul in care userul da click pe buton
+  startFightBtn.addEventListener('click', showWinner);
+  function showWinner() {
+    showWinnerDiv.innerHTML = "Winner To Be Announed!";
+    startFightBtn.classList.remove("d-block");
+    showHeroesContainer.classList.remove("d-flex");
+  }
+ -->

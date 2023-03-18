@@ -1,0 +1,336 @@
+body {
+  background-image: url("assets/back.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.title {
+  text-align: center;
+  font-size: 47px;
+  background-color: rgba(171, 96, 180, 0.38);
+  margin-bottom: 50px;
+}
+
+.buttons-containers {
+  display: flex;
+  justify-content: center;
+}
+
+#start-fight-btn,
+#show-heroes-btn {
+  font-size: 16px;
+  padding: 20px 25px;
+  cursor: pointer;
+  border-radius: 20%;
+  color: brown;
+  background-color: rgba(84, 84, 137, 0.457);
+}
+
+.heroes-container {
+  display: none;
+  justify-content: space-evenly;
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(171, 96, 180, 0.38);
+  padding: 20px;
+  height: 400px;
+  padding: 20px;
+  text-align: center;
+}
+
+.heroes-containerr {
+  display: none;
+  justify-content: space-evenly;
+}
+
+.hero-containerr {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(171, 96, 180, 0.38);
+  padding: 20px;
+  height: 400px;
+  padding: 20px;
+  text-align: center;
+}
+
+.heroes-containerrr {
+  display: none;
+  justify-content: space-evenly;
+}
+
+.hero-containerrr {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(171, 96, 180, 0.38);
+  padding: 20px;
+  height: 400px;
+  padding: 20px;
+  text-align: center;
+}
+
+
+
+
+.hero-name {
+  font-size: xx-large;
+}
+.hero-details {
+  display: contents;
+  font-size: large;
+}
+.hero-container img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.hero-containerr img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+.hero-containerrr img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+#start-fight-btn {
+  display: none;
+}
+
+.d-none {
+  display: none!important;
+}
+
+.d-flex {
+  display: flex!important;
+}
+
+.d-block {
+  display: block!important;
+}
+
+
+#show-winner.d-flex{
+  display: flex!important;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(171, 96, 180, 0.38);
+  padding: 20px;
+  height: 30px;
+  padding: 20px;
+  text-align: center;
+  font-size: 30px;
+}
+
+#show-heroes-btn {
+  font-size: 1.5rem;
+  padding: 1rem 3rem;
+  color: #000000;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 1px solid rgb(1, 4, 155);
+  position: relative;
+  overflow: hidden;
+}
+
+#show-heroes-btn:hover {
+  box-shadow: 1px 1px 25px 10px rgba(137, 12, 232, 0.4);
+}
+
+#show-heroes-btn:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(61, 64, 232, 0.4),
+    transparent
+  );
+  transition: all 650ms;
+}
+
+#show-heroes-btn:hover:before {
+  left: 100%;
+}
+
+
+
+@media screen  and   (min-width: 768px ) and (max-width: 1024px) { 
+  #show-heroes-btn, #start-fight-btn {
+   margin-bottom: 15px;
+    font-size: 25px
+  }
+  .hero-container img {
+    width: 190px;
+    
+}
+.hero-name {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.heroes-container {
+justify-content: space-evenly;
+
+}
+.heroes-containerr {
+  justify-content: space-evenly;
+  
+  }
+  .heroes-containerrr {
+    justify-content: space-evenly;
+        margin-right: 30px;
+        margin-left: 5px;
+        margin-right: -20px;
+        margin-left: 20px;
+    }
+}
+
+@media screen  and   (min-width: 1024px ) and (max-width:768px ) {
+
+
+  
+
+  .hero-container {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(171, 96, 180, 0.38);
+    padding: 20px;
+    height: 300px;
+    padding: 20px;
+    text-align: center;
+
+    
+}
+.hero-containerr {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(171, 96, 180, 0.38);
+  padding: 20px;
+  height: 300px;
+  padding: 20px;
+  text-align: center;
+
+}
+.hero-containerrr {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(171, 96, 180, 0.38);
+  padding: 20px;
+  height: 300px;
+  padding: 20px;
+  text-align: center;
+  margin-left: 10px;
+}
+}
+
+
+
+ @media  screen and (max-width: 767px) {
+
+  body {
+    background-image: url(assets/mobileback.jpg);
+    background-repeat: repeat;
+    background-size: cover;
+    height: 100vh;
+}
+  .title {
+    text-align: center;
+    font-size: 35px;
+    background-color: rgba(171, 96, 180, 0.38);
+    margin-bottom: 50px;
+}
+#start-fight-btn {
+  display: none;
+  margin-bottom: 20px;
+}
+#show-winner.d-flex {
+  display: flex!important;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(171, 96, 180, 0.38);
+  padding: 20px;
+  height: 25px;
+  padding: 10px;
+  text-align: center;
+  font-size: 20px;
+}
+.heroes-container {
+flex-direction: column;
+align-items:column;
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(171, 96, 180, 0.38);
+  padding: 20px;
+  height: 300px;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 30px;
+  }
+
+.hero-containerr {
+  display: flex;
+  flex-direction: flex;
+  background-color: rgba(171, 96, 180, 0.38);
+  padding: 20px;
+  height: 300px;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 30px;
+  }
+  .hero-containerrr {
+    display: flex;
+  flex-direction: flex;
+  background-color: rgba(171, 96, 180, 0.38);
+  padding: 20px;
+  height: 300px;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 30px;
+    }
+
+  .hero-container img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+    
+      align-self: center;
+  }
+  .hero-containerr img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+  
+    align-self: center;
+    
+}
+.hero-containerrr img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+ 
+  align-self: center;
+}
+} 
+
+
+
+
+
+/*
+breakpoints mobile max-width: 767px
+breakpoint tablet min-width: 768px  and max-width: 1024px
+breapoint small laptop min-width: 1025px
+/*
